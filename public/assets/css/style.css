@@ -7,3 +7,34 @@ footer {
     text-align: center;
     padding: 22px;
 }
+
+.contenedor {
+    background-color: #ffdddf;
+    margin: 5%;
+    padding: 10%;
+}
+
+.photo-cont{
+    margin: 2%;
+}
+
+.photo{
+    width: 80%;
+    height: 80%;
+    margin: 2em;
+}
+
+.info-card{
+    background-color: #fddd3d;
+    border: #353A3F;
+    border-style: dotted;
+}
+
+.title{
+    margin: 1em;
+}
+
+.info{
+    margin: 1em;
+    display: inline;
+}

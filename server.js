@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const router = require('./routes/routes');
 
 const hbs = require('hbs');
 require('./hbs/helpers');
@@ -13,16 +14,7 @@ hbs.registerPartials(__dirname + '/views/parciales');
 app.set('view engine', 'hbs');
 
 
-
-
-app.get('/', (req, res) => {
-    res.render('home', {
-        nombre: 'Ricardo arrobo'
-    });
-});
-app.get('/about', (req, res) => {
-    res.render('about')
-});
+app.use(router);
 
 
 app.listen(port, () => {
